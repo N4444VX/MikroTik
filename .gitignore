@@ -1,0 +1,9 @@
+# RouterOS packages are published as GitHub Releases.
+# A raw blob of a Git LFS pointer is not a valid .npk for CAPsMAN.
+*.npk
+
+# Device backups and secret-bearing exports
+*.backup
+*.rif
+export-sensitive*
+*show-sensitive*
