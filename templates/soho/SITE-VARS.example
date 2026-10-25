@@ -1,0 +1,38 @@
+# Site variables cheat sheet
+# Copy this beside the site's edited .rsc files. Do not store real PSKs in git.
+
+SITE_CODE=
+SITE_IDENTITY_GW=
+SITE_IDENTITY_CAP1=
+SITE_IDENTITY_CAP2=
+
+COUNTRY=United States
+BTH_SUBNET=                 # e.g. 192.168.216.0/24 or leave empty and omit from available-from
+
+# SSIDs
+SITE_CORPORATE=
+SITE_STAFF=
+SITE_VENDOR=
+SITE_GUEST=
+SITE_CAMERAS=               # skeleton / usually not provisioned
+SITE_PHONES=
+SITE_REMOTE=
+
+# Passphrases — set only on the device / private site copy
+CHANGE_ME_CORP=
+CHANGE_ME_STAFF=
+CHANGE_ME_VENDOR=
+CHANGE_ME_GUEST=
+
+# Port roles (RB5009 reference — adjust per platform)
+WAN=ether1
+CAP_TRUNK_1=ether2
+CAP_TRUNK_2=ether3
+PBX_ACCESS=ether4
+NVR_ADMIN=ether7            # pvid=1 (mgmt) or pvid=2 (CAMERA)
+MGMT_ACCESS=ether8,sfp-sfpplus1
+
+# Active skeleton VLANs this site uses (others stay safe-empty)
+ACTIVE_VLANS=4,5,6,7        # example
+VLAN99_DHCP=disabled
+NVR_MODE=mgmt               # or camera
